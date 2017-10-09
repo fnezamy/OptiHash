@@ -1,2 +1,2 @@
 # OptiHash
-# This is the develiopment branch for commits from Pooneet Thaper
+# This is the development branch for commits from Pooneet Thaper
