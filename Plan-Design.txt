@@ -1,0 +1,23 @@
+Planning and Design
+--
+UI
+- displays all tasks and a calendar that is processed from tasks
+- organize tasks by deadlines and priorities
+- how to display on UI? have user organize their own space??
+- figure out key differences for Normal and Premium Users
+	- less freedom with configuring generated calendars
+	- cap number of generated calendars in a specific window of time (2-3 per week)
+- will use React for live updates that keep a smooth UI flow for user
+	- have a "board/post-it" system like trello where they can be moved around and spots should be saved
+	- later on: need to make responsive
+
+Backend
+- need to set up PostgreSQL db to store tasks for each user
+	- need to design a model
+- node/express to create web server
+	- Routes:
+		- /dashboard - for all tasks and calendars in specific details
+		- / index - page that displays upcoming deadlines and major tasks with high priority
+		- /dashboard#modify - allow for addition/removal of new tasks. need to toggle this mode so that user doesn't accidentally delete important information
+		- /login - need login page
+		- /logout - need logout option to log user out of their session
