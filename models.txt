@@ -1,0 +1,28 @@
+About:
+This file is brainstorming thoughts about the necessary models for the OptiHash Productivity Dashboard
+
+Models (assuming web app with many users):
+
+- User
+  - Name (Who is this person)
+
+- Notes
+  - User id (Who does this belong to)
+  - Type (What is this for Task/Event/Link/etc.)
+  - Tag(s) (user provided classification for organization)
+  - Description (more detailed description)
+  - Due date (when does this need to be addressed by)
+
+- Reminders
+  - Note id (what is this referencing)
+  - Notification date-time (when should we spam the user with this reminder)
+
+# TODO:
+  - Determine how to organize the application? (is it a web app that should have many users or a single desktop app for each user)
+    - Then this gets into authentication...
+    - What else do we need to store?
+  - What types of notes do they need to take down?
+    - Currently considering links (articles), tasks (deadlines/assignments), events (calendar events)
+  - How are we displaying each of these things to the user?
+  - How does scheduling work exactly?
+  - Sharing stuff... how do we know who has access?
